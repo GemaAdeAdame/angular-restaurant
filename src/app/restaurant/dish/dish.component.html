@@ -1,0 +1,23 @@
+
+<div *ngIf="dish" class="dish">
+    <div class="dish__main">
+      <div class="dish__info">
+        <img
+          class="dish__img"
+          *ngIf="isExtendedVersion"
+          [src]="dish.image"
+        >
+        <p class="dish__name">{{ dish.name }}</p>
+        <p class="dish__price">{{ dish.price }}</p>
+      </div>
+      <button
+        *ngIf="hasAddButton"
+        class="dish__button"
+              (click)="addToOrder()"
+      >Add</button>
+    </div>
+    <p
+      *ngIf="isExtendedVersion"
+      class="dish__description"
+    >{{ dish.description }}</p>
+  </div>

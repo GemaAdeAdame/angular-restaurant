@@ -1,0 +1,11 @@
+<div *ngIf="dishes && dishes.length > 0">
+    <h2>Menú</h2>
+    <app-dish
+      *ngFor="let dish of dishes"
+      class="menu__dish"
+      [dish]="dish"
+      [isExtendedVersion]="false"
+      [hasAddButton]="true"
+      (addToOrderChange)="addToOrder(dish)"
+    ></app-dish>
+</div>

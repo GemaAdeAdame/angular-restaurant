@@ -1,0 +1,27 @@
+:host {
+    padding: 40px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+  }
+  
+  .restaurant {
+    &__description {
+      font-size: 14px;
+      margin-bottom: 30px;
+    }
+  
+    &__dishes {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+      &__menu {
+      width: 40%;
+    }
+  
+      &__order {
+      width: 50%;
+    }
+  }

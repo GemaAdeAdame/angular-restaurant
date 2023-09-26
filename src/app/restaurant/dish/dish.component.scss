@@ -1,0 +1,46 @@
+.dish {
+    border: 1px solid black;
+    padding: 10px;
+  
+    &__main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    &__info {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__button {
+      background-color: rgb(75, 75, 237);
+      color: white;
+      font-weight: 500;
+      padding: 8px 16px;
+      line-height: 14px;
+    }
+  
+    &__img {
+      width: 100px;
+      margin-right: 8px;
+    }
+  
+    &__name {
+      margin-right: 8px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+  
+    &__price {
+      font-size: 14px;
+      color: grey;
+      font-weight: 500;
+    }
+  
+    &__description {
+      margin-top: 16px;
+      font-size: 14px;
+    }
+  }

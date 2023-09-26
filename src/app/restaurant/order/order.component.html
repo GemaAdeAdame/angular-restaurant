@@ -1,0 +1,13 @@
+<h2>Pedido realizado</h2>
+<div
+  *ngIf="order && order.length > 0; else noDishes"
+>
+  <app-dish
+    *ngFor="let dish of order"
+    class="order__dish"
+    [dish]="dish"
+    [hasAddButton]="false"
+    [isExtendedVersion]="true"
+  ></app-dish>
+</div>
+<ng-template #noDishes>Todavía no se han añadido platos al pedido</ng-template>
